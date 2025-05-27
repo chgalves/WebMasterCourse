@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
@@ -23,8 +24,8 @@ html, body {
 /********/
 
 header {
-	background-color: #d6d6d6;
-	padding: 10px 2% 30px 2%;
+	background-color: rgb(180, 180, 180);
+	padding: 10px 2% 40px 2%;
 }
 
 .first-logo {
@@ -49,7 +50,6 @@ header {
 
 section.form-cover {
 	width: 100%;
-	padding: 0 2%;
 }
 
 .background {
@@ -62,23 +62,25 @@ section.form-cover {
 .form-container {
 	float: right;
 	width: 400px;
-	height: 550px;
+	height: 110%;
 	margin-right: 40px;
 	position: relative;
 	top: -5%;
 	background-color: white;
+	box-shadow: 0px 2px 2px 1px rgb(180, 180, 180);
+	z-index: 2;
 }
 
 .form-container h2 {
 	font-weight: normal;
-	padding: 20px 15px;
-	background-color: rgb(234, 236, 239);
+	padding: 25px 15px;
+	background-color: rgb(210, 210, 210);
 	color: black;
 	font-size: 18px;
 }
 
 .form-container form {
-	margin-top: 8px;
+	margin-top: 20px;
 	padding: 15px;
 }
 
@@ -100,7 +102,7 @@ section.form-cover {
 	border: 1px solid #ccc;
 	height: 45px;
 	line-height: 45px;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 .form-container form input[type=submit] {
@@ -112,6 +114,64 @@ section.form-cover {
 	height: 50px;
 	cursor: pointer;
 	border: 0;
+}
+
+.arrow {
+	position: absolute;
+	top: 610px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 40px;
+	height: 40px;
+	background-image: url('../images/arrow.png');
+	background-size: 100% 100%;
+	z-index: 3; 
+	cursor: pointer;
+}
+
+section.call-to-action {
+	z-index: 1;
+	width: 100%;
+	position: relative;
+	top: -50px;
+	display: inline-block;
+	text-align: center;
+}
+
+section.call-to-action div.container {
+	background-color: #ba8f71;
+	padding: 50px 0;
+}
+
+section.call-to-action h2 {
+	width: 96%;
+	max-width: 700px;
+	display: inline-block;
+	color: white;
+	font-size: 36px;
+	font-weight: normal;
+}
+
+section.call-to-action p {
+	width: 96%;
+	max-width: 700px;
+	display: inline-block;
+	color: white;
+	margin-top:10px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+@media screen and (max-width: 960px) {
+	.background {
+		text-align: center;
+	}
+
+	.form-container {
+		height: auto;
+		position: relative;
+		display: inline-block;
+	}
 }
 
 @media screen and (max-width: 510px) {
