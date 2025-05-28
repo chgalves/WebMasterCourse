@@ -29,7 +29,20 @@ The layout is fully responsive, adapting to different screen sizes using media q
 
 ## 📁 Project Structure
 
-
+project-02-landing-page/
+├── css/
+│ └── style.css
+├── images/
+│ ├── first-logo.png
+│ ├── second-logo.png
+│ ├── background-form.jpg
+│ ├── arrow.png
+│ ├── first-mosaic.jpg
+│ ├── second-mosaic.jpg
+│ ├── third-mosaic.jpg
+│ └── fourth-mosaic.jpg
+├── index.html
+└── README.md
 ---
 
 ## 🎯 Learning Objectives
