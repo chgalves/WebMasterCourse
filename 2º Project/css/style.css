@@ -9,7 +9,7 @@ html, body {
 	height: 100%;
 }
 
-/*General divs!*/
+/* General divs! */
 
 .clear {
 	clear: both;
@@ -22,6 +22,8 @@ html, body {
 }
 
 /********/
+
+/* Header */
 
 header {
 	background-color: rgb(180, 180, 180);
@@ -47,6 +49,8 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+/* Form Section */
 
 section.form-cover {
 	width: 100%;
@@ -116,18 +120,7 @@ section.form-cover {
 	border: 0;
 }
 
-.arrow {
-	position: absolute;
-	top: 610px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 40px;
-	height: 40px;
-	background-image: url('../images/arrow.png');
-	background-size: 100% 100%;
-	z-index: 3; 
-	cursor: pointer;
-}
+/* Call to Action */
 
 section.call-to-action {
 	z-index: 1;
@@ -157,9 +150,91 @@ section.call-to-action p {
 	max-width: 700px;
 	display: inline-block;
 	color: white;
-	margin-top:10px;
+	margin-top: 10px;
 	font-size: 18px;
 	font-weight: normal;
+}
+
+.arrow-icon {
+	position: absolute;
+	left: 50%;
+	top: -10px;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-image: url('../images/arrow.png');
+	cursor: pointer;
+}
+
+/* Mosaic Section */
+
+.mosaic {
+	padding-top: -20px;
+	margin-top: -50px;
+}
+
+.flex-mosaic {
+	display: flex;
+}
+
+.first-item-mosaic {
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+}
+
+.second-item-mosaic {
+	width: 40%;
+	padding: 60px 40px;
+	background-color: #EBD5C6;
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+	padding: 20px 0;
+}
+
+footer p {
+	margin-top: 8px;
+}
+
+footer img {
+	width: 120px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 510px) {
+	header {
+		text-align: center;
+	}
+
+	.first-logo,
+	.second-logo {
+		margin-top: 10px;
+		display: inline-block;
+		float: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.flex-mosaic {
+		display: block;
+	}
+
+	.first-item-mosaic {
+		padding-top: 80%;
+		width: 100%;
+	}
+
+	.second-item-mosaic {
+		text-align: justify;
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 960px) {
@@ -171,18 +246,5 @@ section.call-to-action p {
 		height: auto;
 		position: relative;
 		display: inline-block;
-	}
-}
-
-@media screen and (max-width: 510px) {
-	
-	header {
-		text-align: center;
-	}
-
-	.first-logo, .second-logo {
-		margin-top: 10px;
-		display: inline-block;
-		float: none;
 	}
 }

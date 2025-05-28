@@ -1,82 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="Description" content="My site content">
-	<meta name="keywords" content="Words, Separated, By, Commas">
-	<meta name="author" content="Carlos">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Landing Page</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<header>
-		<div class="container">
-			<div><div class="first-logo"></div></div>
-			<div><div class="second-logo"></div></div>
-			<div class="clear"></div>
-		</div>
-	</header>
-	<section class="form-cover">
-		<div class="container background">
-			<div class="form-container">
-				<h2>BELIEVE ME: IT'S EVEN BETTER INSIDE!</h2>
-				<form>
-					<div class="form-wrapper">
-						<p>Full Name:</p>
-						<input type="text" name="name" required placeholder="Full name here">
-					</div>
-					<div class="form-wrapper">
-						<p>E-mail:</p>
-						<input type="text" name="email" required placeholder="E-mail here">
-					</div>
-					<div class="form-wrapper">
-						<p>Telephone:</p>
-						<input type="text" name="telephone" required placeholder="Telephone here">
-					</div>
-					<div class="form-wrapper">
-						<input type="submit" name="submit" value="Submit">
-					</div>
-					<div class="form-wrapper">
-						<p>*Required Fields</p>
-					</div>
-				</form>
-			</div>
-				<div class="arrow"></div>
-			<div class="clear"></div>
-		</div>
-	</section>
+  <head>
+    <meta charset="utf-8">
+    <meta name="Description" content="My site content">
+    <meta name="keywords" content="Words, Separated, By, Commas">
+    <meta name="author" content="Carlos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <div class="first-logo"></div>
+        </div>
+        <div>
+          <div class="second-logo"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </header>
 
+    <section class="form-cover">
+      <div class="container background">
+        <div class="form-container">
+          <h2>BELIEVE ME: IT'S EVEN BETTER INSIDE!</h2>
+          <form>
+            <div class="form-wrapper">
+              <p>Full Name:</p>
+              <input type="text" name="name" required placeholder="Full name here">
+            </div>
+            <div class="form-wrapper">
+              <p>E-mail:</p>
+              <input type="text" name="email" required placeholder="E-mail here">
+            </div>
+            <div class="form-wrapper">
+              <p>Telephone:</p>
+              <input type="text" name="telephone" required placeholder="Telephone here">
+            </div>
+            <div class="form-wrapper">
+              <input type="submit" name="submit" value="Submit">
+            </div>
+            <div class="form-wrapper">
+              <p>*Required Fields</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
-	<section class="call-to-action">
-		<div class="container">
-			<h2>For an unforgettable trip.</h2>
-			<p>Cote d'Azur: Taking you even further</p>
-		</div>
-	</section>
+    <section class="call-to-action">
+      <div class="arrow-icon"></div>
+      <div class="container">
+        <div>
+          <h2>For an unforgettable trip.</h2>
+        </div>
+        <div>
+          <p>Cote d'Azur: Taking you even further</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
 
-	<section class="mosaic">
-		<div class="containter">
-			<div class="flex-mosaic">
-				<div class="first-mosaic">
-					
-				</div>
-				<div class="second-mosaic">
-					
-				</div>
-				<div class="third-mosaic">
-					
-				</div>
-				<div class="fourth-mosaic">
-					
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="mosaic">
+      <div class="container">
+        <div class="flex-mosaic">
+          <div style="background-image:url('images/first-mosaic.jpg');" class="first-item-mosaic"></div>
+          <div class="second-item-mosaic">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis accumsan arcu, vitae convallis justo. Proin ante urna, eleifend id rutrum quis, fermentum sit amet felis.</p>
+          </div>
+        </div>
 
-</body>
+        <div class="flex-mosaic" style="flex-direction: row-reverse;">
+          <div style="background-image:url('images/second-mosaic.jpg');" class="first-item-mosaic"></div>
+          <div class="second-item-mosaic">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis accumsan arcu, vitae convallis justo. Proin ante urna, eleifend id rutrum quis, fermentum sit amet felis.</p>
+          </div>
+        </div>
+
+        <div class="flex-mosaic">
+          <div style="background-image:url('images/third-mosaic.jpg');" class="first-item-mosaic"></div>
+          <div class="second-item-mosaic">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis accumsan arcu, vitae convallis justo. Proin ante urna, eleifend id rutrum quis, fermentum sit amet felis.</p>
+          </div>
+        </div>
+
+        <div class="flex-mosaic" style="flex-direction: row-reverse;">
+          <div style="background-image:url('images/fourth-mosaic.jpg');" class="first-item-mosaic"></div>
+          <div class="second-item-mosaic">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis accumsan arcu, vitae convallis justo. Proin ante urna, eleifend id rutrum quis, fermentum sit amet felis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a href=""><img src="images/first-logo.png"></a>
+      <p>All rights reserved</p>
+      <p>Contact us: 0000-1111</p>
+    </footer>
+  </body>
 </html>
