@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	
+
+	<title>Third Project</title>
+
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 	
-	<title>Third Project</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 	<header>
 		<div class="container">
 			<div class="logo"></div>
 
-			<!-- Desktop Menu -->
+			<!-- Desktop Navigation -->
 			<nav class="desktop-menu">
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Services</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
 
-			<!-- Mobile Menu -->
+			<!-- Mobile Navigation -->
 			<nav class="mobile-menu">
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Services</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
 
@@ -61,18 +62,14 @@
 					<li>Mobile Development</li>
 					<li>Desktop Development</li>
 				</ul>
-				
-				<div class="clear"></div>
+
 				<div class="first-button">Contact Us</div>
-				<div class="clear"></div>
 			</div>
 
 			<div class="device-main-section"></div>
 			<div class="clear"></div>
 		</div>
 	</section>
-
-	<div class="clear"></div>
 
 	<!-- Second Section -->
 	<section class="second-section-content">
@@ -82,7 +79,7 @@
 				Unlock the power of coding with our all-in-one learning platform! Master front-end, back-end, database management, and API development through expert-led courses designed for all skill levels. Whether you're a beginner or an experienced programmer, our interactive lessons and real-world projects will help you sharpen your skills and build a strong foundation for your tech career.
 			</p>
 		</div>
-		<img src="images/mockup.jpg">
+		<img src="images/mockup.jpg" alt="Mockup image">
 	</section>
 
 	<!-- Third Section -->
@@ -91,7 +88,7 @@
 			<div class="wrapper-left-side">
 				<h2>Our Team:</h2>
 				<p>
-					Learn from top instructors and receive exclusive mentorship from industry leaders. Gain insights from experts, master advanced techniques, and accelerate your growth with personalized guidance from the best in the field. Elevate your skills and achieve success with tailored mentorship designed to help you thrive.
+					Learn from top instructors and receive exclusive mentorship from industry leaders. Gain insights from experts, master advanced techniques, and accelerate your growth with personalized guidance from the best in the field.
 				</p>
 			</div>
 		</div>
@@ -105,21 +102,18 @@
 					</div>
 					<div class="author-image"></div>
 				</div>
-
 				<div class="text-author">
 					<p>
 						<strong>I am a Computer Science undergraduate and a full-stack professional specializing in web development.</strong> I believe programming languages are powerful tools for solving real-world problems and driving positive change in society.
 					</p>
 				</div>
 			</div>
-
 			<div class="slider-bullets">
 				<span style="background-color: rgb(170, 170, 170);"></span>
 				<span></span>
 				<span></span>
 			</div>
 		</div>
-
 		<div class="clear"></div>
 	</section>
 
@@ -130,19 +124,15 @@
 			<div class="form">
 				<h2>Contact us</h2>
 				<p>
-					Have questions or need assistance? We’re here to help! Whether you're looking for support, have feedback, or want to collaborate, feel free to reach out. Connect with us through email, social media, or our contact form—we’d love to hear from you!
+					Have questions or need assistance? We’re here to help! Whether you're looking for support, have feedback, or want to collaborate, feel free to reach out.
 				</p>
 
 				<form>
 					<input type="text" name="name" placeholder="Your name*">
 					<input type="text" name="email" placeholder="Your e-mail*">
 					<textarea name="message" placeholder="Type us"></textarea>
-
 					<div class="clear"></div>
-
-					<div>
-						<input type="submit" value="Submit">
-					</div>
+					<input type="submit" value="Submit">
 				</form>
 			</div>
 
@@ -151,13 +141,21 @@
 				<h2>Visit our headquarters</h2>
 				<div class="third-map-wrapper">
 					<div class="second-map-wrapper">
-						<div id="map" class="map"></div>
+						<iframe width="520" height="510" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=510&amp;hl=en&amp;q=Guarabira+(Find%20Me)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<div class="clear"></div>
 	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<p>All Rights Reserved</p>
+			<p>carloshenriqueprogramming@gmail.com</p>
+			<div class="clear"></div>
+		</div>
+	</footer>
 </body>
 </html>
