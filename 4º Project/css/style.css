@@ -30,16 +30,43 @@ header .logo img {
 	width: 236px;
 }
 
-header nav {
+header nav.mobile-menu {
+	margin-top: 5px;
+	float: right;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	background-image: url('../images/mobile-menu.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+header nav.mobile-menu ul {
+	display: none;
+	z-index: 999;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	background-color: white;
+}
+
+header nav.mobile-menu ul li {
+	padding: 10px 0;
+}
+
+header nav.desktop-menu {
 	float: right;
 }
 
-header nav ul {
+header nav.desktop-menu ul {
 	padding: 8px 0;
 	list-style-type: none;
 }
 
-header nav ul li {
+header nav.desktop-menu ul li {
 	float: left;
 	padding: 0 20px;
 }
@@ -172,7 +199,29 @@ section.profile-container .profile-text p {
 
 /**/
 
+/*Videos*/
+
+section.videos {
+	padding: 50px 0;
+}
+
+section.videos .box-video {
+	float: left;
+	width: 33.3%;
+	padding-top: calc(33.3% * 0.6);
+}
+
+/**/
+
 @media screen and (max-width: 768px) {
+
+	header nav.desktop-menu {
+		display: none;
+	}
+
+	header nav.mobile-menu {
+		display: block;
+	}
 
 	section.services > .container {
 		flex-direction: column;
@@ -200,5 +249,42 @@ section.profile-container .profile-text p {
 		background-color: #576975;
 	}
 
+	section.profile-container .first-wrapper-profile {
+		padding-top: 0;
+	}
 
+	section.profile-container .second-wrapper-profile {
+		height: auto;
+		position: static;
+		text-align:center;
+		display: inline-block;
+	}
+
+	section.profile-container .profile-image {
+		width: 50%;
+		padding-top: 70%;
+		display: inline-block;
+		height: auto;
+	}
+
+	section.profile-container .profile-text {
+		display: inline-block;
+		text-align: justify;
+		width: 100%;
+		padding: 0 30px;
+	}
+
+}
+
+@media screen and (max-width: 580px) {
+	section.profile-container .profile-image {
+		width: 80%;
+		padding-top: 110%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	header .logo img {
+		width: 200px;
+	}
 }
