@@ -208,7 +208,55 @@ section.videos {
 section.videos .box-video {
 	float: left;
 	width: 33.3%;
+	position: relative;
+	border: 5px solid white;
 	padding-top: calc(33.3% * 0.6);
+}
+
+section.videos iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/**/
+
+/*Treatments*/
+
+section.treatments {
+	padding: 70px 0;
+}
+
+section.treatments .treatments-container {
+	float: left;
+	width: 33.3%;
+}
+
+section.treatments > h2 {
+	color: #698293;
+	text-align: center;
+	font-size: 18px;
+}
+
+section.treatments > .container {
+	padding: 80px 0;
+}
+
+.single-treatment {
+	padding: 20px;
+}
+
+.single-treatment h2 {
+	font-size: 18px;
+	color: #737373;
+}
+
+.single-treatment p {
+	padding: 10px 0;
+	font-size: 13px;
+	color: #b4b4b4;
 }
 
 /**/
@@ -274,12 +322,28 @@ section.videos .box-video {
 		padding: 0 30px;
 	}
 
+	section.videos {
+		text-align: center;
+	}
+
+	section.videos .box-video {
+		float: none;
+		width: 70%;
+		display: inline-block;
+		padding-top: calc(100% * 0.6);
+	}
+
 }
 
 @media screen and (max-width: 580px) {
 	section.profile-container .profile-image {
 		width: 80%;
 		padding-top: 110%;
+	}
+
+	section.videos .box-video {
+		width: 100%;
+		padding-top: calc(100% * 0.6);
 	}
 }
 
