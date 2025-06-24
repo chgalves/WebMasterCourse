@@ -76,9 +76,9 @@ This is the professional website of **Dr. Isabela Mendes**, a dentist specialize
 
 ---
 
-## 🙋‍♀️ About Dr. Fernanda Varella Slovinski
+## 🙋‍♀️ About Dr. Isabela Mendes
 
-**Dr. Fernanda Varella Slovinski** is a highly qualified dental surgeon specializing in aesthetic dentistry, oral rehabilitation, and implant-supported prostheses. Her mission is to provide excellent dental care with precision, empathy, and a commitment to transforming smiles and improving lives.
+**Dr. Isabela Mendes** is a highly qualified dental surgeon specializing in aesthetic dentistry, oral rehabilitation, and implant-supported prostheses. Her mission is to provide excellent dental care with precision, empathy, and a commitment to transforming smiles and improving lives.
 
 ---
 
