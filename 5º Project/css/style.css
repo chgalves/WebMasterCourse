@@ -1,836 +1,842 @@
+/* Basic reset and font configuration */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 
 html, body {
-	height: 100%;
+    height: 100%;
 }
 
+/* Main container */
 .container {
-	width: 100%;
-	max-width: 1280px;
-	margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
+/* Clearfix */
 .clear {
-	clear: both;
+    clear: both;
 }
 
+/* Header styles */
 header {
-	padding: 20px 2% 35px 2%;
-	height: 130px;
+    padding: 20px 2% 35px 2%;
+    height: 130px;
 }
 
 header .logo {
-	float: left;
+    float: left;
 }
 
+/* Desktop menu styles */
 header nav.desktop-menu {
-	float: right;
-	position: relative;
-	top: 40px;
+    float: right;
+    position: relative;
+    top: 40px;
 }
 
 header nav.desktop-menu ul {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 header nav.desktop-menu ul li {
-	float: left;
-	font-size: 23px;
-	padding: 0 30px;
-	font-style: italic;
+    float: left; /* This keeps the menu items side by side */
+    font-size: 23px;
+    padding: 0 30px;
+    font-style: italic;
 }
 
 header nav.desktop-menu a {
-	color: black;
-	text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
+/* Mobile menu styles */
 header nav.mobile-menu {
-	float: right;
-	margin-top: 40px;
-	width: 32px;
-	height: 32px;
-	background-size: 100% 100%;
-	display: none;
-	cursor: pointer;
-	background-image: url("../images/menu_icon.png");
+    float: right;
+    margin-top: 40px;
+    width: 32px;
+    height: 32px;
+    background-size: 100% 100%;
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    background-image: url("../images/menu_icon.png");
 }
 
 header nav.mobile-menu ul {
-	display: none;
-	width: 100%;
-	left: 0;
-	top: 100px;
-	z-index: 999;
-	border-bottom: 3px solid #EB2D2D;
-	position: absolute;
-	text-align: center;
-	background-color: white;
+    display: none; /* Hidden by default */
+    width: 100%;
+    left: 0;
+    top: 100px;
+    z-index: 999;
+    border-bottom: 3px solid #EB2D2D;
+    position: absolute;
+    text-align: center;
+    background-color: white;
 }
 
 header nav.mobile-menu li {
-	font-size: 23px;
-	padding: 20px 0;
-	font-style: italic;
+    font-size: 23px;
+    padding: 20px 0;
+    font-style: italic;
 }
 
 header nav.mobile-menu li a {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
 }
 
+/* Banner section */
 section.banner {
-	overflow: hidden;
-	width: 100%;
-	height: 600px;
-	background: black;
-	background-image: url("../images/background.jpg");
-	background-size: contain;
-	background-position: right bottom;
-	background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    background: black;
+    background-image: url("../images/background.jpg");
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
 }
 
 .banner-text {
-	padding: 70px;
+    padding: 70px;
 }
 
 .banner-text-single {
-	width: 314px;
-	font-style: italic;
-	margin-top: 30px;
-	padding-left: 50px;
-	height: 70px;
-	line-height: 70px;
-	color: white;
-	font-size: 23px;
-	background-image: url("../images/red-box-text.png");
-	background-size: 100% 100%;
+    width: 314px;
+    font-style: italic;
+    margin-top: 30px;
+    padding-left: 50px;
+    height: 70px;
+    line-height: 70px;
+    color: white;
+    font-size: 23px;
+    background-image: url("../images/red-box-text.png");
+    background-size: 100% 100%;
 }
 
+/* Specific styles for banner text */
 .banner-text .banner-text-single:nth-of-type(2) {
-	width: 200px;
-	height: 70px;
-	line-height: 70px;
-	position: relative;
-	left: -10px;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    left: -10px;
 }
 
 .banner-text .banner-text-single:nth-of-type(3) {
-	width: 170px;
-	height: 70px;
-	line-height: 70px;
-	position: relative;
-	left: -20px;
+    width: 170px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    left: -20px;
 }
 
 .banner-text .banner-text-single:nth-of-type(4) {
-	width: 320px;
-	line-height: 70px;
-	font-size: 14px;
-	background-image: url("../images/white-box-text.png");
-	color: black;
-	position: relative;
-	left: -30px ;
+    width: 320px;
+    line-height: 70px;
+    font-size: 14px;
+    background-image: url("../images/white-box-text.png");
+    color: black;
+    position: relative;
+    left: -30px;
 }
 
+/* Featured vehicles section */
 section.featured-vehicles {
-	padding: 90px 2%;
+    padding: 90px 2%;
 }
 
 section.featured-vehicles .container {
-	max-width: 900px;
-	padding: 40px 0;
+    max-width: 900px;
+    padding: 40px 0;
 }
 
 section.featured-vehicles .line-title h2 {
-	text-align: center;
-	font-size: 27px;
-	font-style: italic;
-	display: inline-block;
-	position: relative;
-	background: white;
-	padding: 0 20px;
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    background: white;
+    padding: 0 20px;
 }
 
 .line-title {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .line-title::before,
 .line-title::after {
-	content: "";
-	flex: 1;
-	height: 2px;
-	background: black;
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: black;
 }
 
+/* Featured showcase */
 .featured-showcase {
-	float: left;
-	width: 33.3%;
+    float: left;
+    width: 33.3%;
 }
 
 .featured-showcase .car-image {
-	width: 100%;
-	padding-top: 100%;
-	border: 8px solid white;
-	background-size: 100% 100%;
+    width: 100%;
+    padding-top: 100%;
+    border: 8px solid white;
+    background-size: 100% 100%;
 }
 
 .featured-showcase h2 {
-	padding-left: 8px;
-	color: black;
-	font-style: italic;
-	font-size: 20px;
+    padding-left: 8px;
+    color: black;
+    font-style: italic;
+    font-size: 20px;
 }
 
 .featured-showcase p {
-	padding-left: 8px;
-	padding-top: 8px;
-	color: #353535;
-	font-size: 15px;
-	font-style: italic;
+    padding-left: 8px;
+    padding-top: 8px;
+    color: #353535;
+    font-size: 15px;
+    font-style: italic;
 }
 
 .featured-showcase a {
-	margin-left: 8px;
-	margin-top: 10px;
+    margin-left: 8px;
+    margin-top: 10px;
 }
 
+/* Button styles */
 .button {
-	color: white;
-	font-size: 16px;
-	font-style: italic;
-	width: 150px;
-	text-align: center;
-	display: block;
-	line-height: 40px;
-	background-color: #EB2D2D;
-	text-decoration: none;
-	border-bottom: 5px solid #B21E1E;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    width: 150px;
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    background-color: #EB2D2D;
+    text-decoration: none;
+    border-bottom: 5px solid #B21E1E;
 }
 
+/* Services section */
 .services {
-	display: flex;
+    display: flex;
 }
 
 .left-side {
-	width: 50%;
-	text-align: right;
-	padding: 90px 0; 
-	background-color: #242424;
-	color: white;
+    width: 50%;
+    text-align: right;
+    padding: 90px 0; 
+    background-color: #242424;
+    color: white;
 }
 
 .left-side-wrapper {
-	padding-right: 100px;
-	display: inline-block;
-	text-align: left;
+    padding-right: 100px;
+    display: inline-block;
+    text-align: left;
 }
 
 .left-side-wrapper h2 {
-	font-weight: normal;
-	font-style: italic;
-	font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
 }
 
 .left-side-wrapper ul {
-	display: inline-block;
-	margin-top: 20px;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .left-side-wrapper li {
-	margin-left: 15px;
+    margin-left: 15px;
 }
 
 .left-side-wrapper a {
-	margin-left: 40px;
-	display: inline-block;
-	vertical-align: bottom;
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 .right-side {
-	width: 50%;
-	padding: 90px 100px;
-	background: #EB2D2D;
-	color: white;
+    width: 50%;
+    padding: 90px 100px;
+    background: #EB2D2D;
+    color: white;
 }
 
 .right-side h2 {
-	font-weight: normal;
-	font-style: italic;
-	font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
 }
 
 .right-side .review {
-	margin-top: 19px;
+    margin-top: 19px;
 }
 
 .review p {
-	font-size: 20px;
+    font-size: 20px;
 }
 
+/* Navigation */
 .navigation {
-	float: left;
-	width: 100%;
-	max-width: 700px;
-	margin-top: 30px;
+    float: left;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
 }
 
 .navigation img {
-	margin: 0 20px;
-	cursor: pointer;
+    margin: 0 20px;
+    cursor: pointer;
 }
 
 .arrows {
-	float: left;
+    float: left;
 }
 
 .name-reviewer {
-	float: right;
-	color: #252525;
-	font-size: 23px;
+    float: right;
+    color: #252525;
+    font-size: 23px;
 }
 
+/* Contact section */
 section.contact {
-	padding: 80px 2% 0 2%;
+    padding: 80px 2% 0 2%;
 }
 
 section.contact form {
-	max-width: 600px;
-	margin: 30px auto;
+    max-width: 600px;
+    margin: 30px auto;
 }
 
 section.contact .input-wrapper {
-	float: left;
-	padding: 10px;
-	margin-top: 7px;
+    float: left;
+    padding: 10px;
+    margin-top: 7px;
 }
 
 section.contact input[type=text] {
-	width: 100%;
-	border: 1px solid #ccc;
-	height: 60px;
-	font-size: 16px;
-	line-height: 40px;
-	padding-left: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 60px;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 15px;
 }
 
 section.contact textarea {
-	width: 100%;
-	font-size: 16px;
-	border: 1px solid #ccc;
-	height: 140px;
-	padding: 8px;
-	resize: none;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 140px;
+    padding: 8px;
+    resize: none;
 }
 
 section.contact form .input-wrapper:nth-of-type(5) {
-	text-align: center;
+    text-align: center;
 }
 
 section.contact input[type=submit] {
-	border-right: 0;	
-	border-left: 0;
-	border-top: 0;
-	cursor: pointer;
-	display: inline-block;
+    border-right: 0;	
+    border-left: 0;
+    border-top: 0;
+    cursor: pointer;
+    display: inline-block;
 }
 
+/* Utility classes */
 .w100 {
-	width: 100%;
+    width: 100%;
 }
 
 .w50 {
-	width: 50%;
+    width: 50%;
 }
 
+/* Footer */
 footer {
-	margin-top: 20px;
-	padding: 40px 2%;
-	background: #252525;
+    margin-top: 20px;
+    padding: 40px 2%;
+    background: #252525;
 }
 
 footer nav {
-	float: left;
+    float: left;
 }
 
 footer nav ul {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 footer nav ul li {
-	float: left;
-	font-style: italic;
-	padding: 0 35px;
-	font-size: 19px;
+    float: left;
+    font-style: italic;
+    padding: 0 35px;
+    font-size: 19px;
 }
 
 footer nav ul a {
-	color: white;
-	text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 footer p {
-	float: right;
-	color: white;
-	font-size: 19px;
-	font-style: italic;
+    float: right;
+    color: white;
+    font-size: 19px;
+    font-style: italic;
 }
 
-/*========Página de Vendas (Sale Page)=====*/
-
+/*========Sale Page=====*/
 section.sale {
-	min-height: 90%;
-	padding: 90px 0;
+    min-height: 90%;
+    padding: 90px 0;
 }
 
 .sale-content {
-	margin-top: 40px;
+    margin-top: 40px;
 }
 
 .sidebar {
-	float: left;
-	width: 30%;
+    float: left;
+    width: 30%;
 }
 
 .price-search {
-	width: 90%;
+    width: 90%;
 }
 
 .price-search h2 {
-	font-size: 24px;
-	color: black;
-	font-weight: normal;
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
 }
 
 .price-search .price-bar {
-	width: 100%;
-	height: 20px;
-	border-radius: 20px;
-	border: 1px solid #ccc;
-	margin-top: 8px;
-	position: relative;
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    position: relative;
 }
 
 .fill-price-bar {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 30%;
-	height: 20px;
-	border-radius: 20px;
-	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
 }
 
 .pointer-bar {
-	width: 26px;
-	height: 26px;
-	border-radius: 8px;
-	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
-	border: 1px solid #777;
-	position: absolute;
-	left: calc(30% - 13px);
-	top: -3px;
-	cursor: pointer;
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
+    border: 1px solid #777;
+    position: absolute;
+    left: calc(30% - 13px);
+    top: -3px;
+    cursor: pointer;
 }
 
 .price-value {
-	margin-top: 8px;
+    margin-top: 8px;
 }
 
 .price-value p {
-	color: black;
-	font-size: 15px;
+    color: black;
+    font-size: 15px;
 }
 
 .price-value p:nth-of-type(1) {
-	float: left;
+    float: left;
 }
 
 .price-value p:nth-of-type(2) {
-	float: right;
+    float: right;
 }
 
+/* Year search */
 .year-search {
-	margin-top: 40px;
+    margin-top: 40px;
 }
 
 .year-search h2 {
-	font-size: 24px;
-	color: black;
-	font-weight: normal;
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
 }
 
+/* Sale form wrapper */
 .sale-form-wrapper {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .sale-form-wrapper input[type=checkbox] {
-	display: none;
+    display: none;
 }
 
 .sale-form-wrapper label {
-	width: 20px;
-	height: 20px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	display: inline-block;
-	vertical-align: top;
-	cursor: pointer;
-	position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
 }
 
-.sale-form-wrapper input[type=checkbox]:checked + label > .circle-checkbox{
-	display: block;
+.sale-form-wrapper input[type=checkbox]:checked + label > .circle-checkbox {
+    display: block;
 }
 
 .circle-checkbox {
-	width: 8px;
-	height: 8px;
-	display: none;
-	border-radius: 4px;
-	background: black;
-	position: absolute;
-	left: 6px;
-	top: 6px;
+    width: 8px;
+    height: 8px;
+    display: none;
+    border-radius: 4px;
+    background: black;
+    position: absolute;
+    left: 6px;
+    top: 6px;
 }
 
 .sale-form-wrapper span {
-	display: inline-block;
-	vertical-align: top;
-	padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
 }
 
+/* Featured sale */
 .featured-sale {
-	overflow: hidden;
-	float: left;
-	width: 70%;
+    overflow: hidden;
+    float: left;
+    width: 70%;
 }
 
 .featured-sale .featured-showcase {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
-/*===========Pagina de Vendas Individual=============*/
-
+/*===========Single Sale Page=============*/
 section.single-sale {
-	padding: 80px 2% 0 2%;
+    padding: 80px 2% 0 2%;
 }
 
 section.single-sale .container {
-	padding: 40px 0 0 0;
-	text-align: center;
+    padding: 40px 0 0 0;
+    text-align: center;
 }
 
 .vehicle-information {
-	display: inline-block;
-	width: 60%;
+    display: inline-block;
+    width: 60%;
 }
-
 
 .main-vehicle-photo {
-	width: 100%;
-	padding-top: 70%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-
 .vehicle-description {
-	display: inline-block;
-	vertical-align: top;
-	padding: 60px 20px;
-	text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    padding: 60px 20px;
+    text-align: left;
 }
 
 .vehicle-description p {
-	max-width: 360px;
-	margin-top: 25px;
-	text-align: justify;
-	font-size: 17px;
+    max-width: 360px;
+    margin-top: 25px;
+    text-align: justify;
+    font-size: 17px;
 }
 
 .vehicle-description a {
-	margin-top: 25px;
+    margin-top: 25px;
 }
 
+/* Gallery navigation */
 .gallery-navigation-parent {
-	width: 100%;
-	padding: 36px;
-	position: relative;
+    width: 100%;
+    padding: 36px;
+    position: relative;
 }
 
 .left-arrow-navigation {
-	position: absolute;
-	left: 8px;
-	top: 50%;
-	background-image: url("../images/left-arrow.png");
-	background-size: 100% 100%;
-	width: 22px;
-	height: 22px;
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	cursor: pointer;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    background-image: url("../images/left-arrow.png");
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .right-arrow-navigation {
-	position: absolute;
-	right: 8px;
-	top: 50%;
-	background-image: url("../images/right-arrow.png");
-	background-size: 100% 100%;
-	width: 22px;
-	height: 22px;
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    background-image: url("../images/right-arrow.png");
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
+/* Breadcrumb */
 .breadcrumb {
-	padding: 20px 0;
-	text-align: left;
+    padding: 20px 0;
+    text-align: left;
 }
 
 .breadcrumb a {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .breadcrumb a:last-child {
-	color: red;
+    color: red;
 }
 
 .breadcrumb span {
-	padding: 0 30px;
+    padding: 0 30px;
 }
 
+/* Gallery navigation */
 .gallery-navigation {
-	overflow: hidden;
-	width: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 
 .gallery-navigation-wrapper {
-	width: 200%;
+    width: 200%;
 }
 
 .vehicle-gallery-photo-wrapper {
-	float: left;
-	padding: 9px;
-	width: calc(33.3% * (100/200));
+    float: left;
+    padding: 9px;
+    width: calc(33.3% * (100/200));
 }
 
 .vehicle-gallery-photo {
-	width: 100%;
-	cursor: pointer;
-	height: 100%;
-	padding-top: 70%;
-	background-position: center;
-	background-size: cover;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: cover;
 }
 
 /*===========ABOUT PAGE===============*/
-
 section.about {
-	min-height: 90%;
-	padding: 60px 2% 20px 2%;
+    min-height: 90%;
+    padding: 60px 2% 20px 2%;
 }
 
 section.about .container {
-	max-width: 840px;
-	margin-top: 30px;
+    max-width: 840px;
+    margin-top: 30px;
 }
 
 section.about .about-main-photo {
-	width: 100%;
-	max-width: 840px;
-	padding-top: 60%;
-	background-image: url();
-	background-position: center;
-	background-size: 100% 100%;
-	background-color: rgb(220, 220, 220);
-	overflow: hidden;
+    width: 100%;
+    max-width: 840px;
+    padding-top: 60%;
+    background-image: url();
+    background-position: center;
+    background-size: 100% 100%;
+    background-color: rgb(220, 220, 220);
+    overflow: hidden;
 }
 
 section.about .first-author-description {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 .first-author-description h2 {
-	font-size: 24px;
+    font-size: 24px;
 }
 
 .first-author-description p {
-	font-size: 16px;
-	margin-top: 10px;
-	line-height: 28px;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 28px;
 }
 
 .second-author-description {
-	margin-top: 40px;
+    margin-top: 40px;
 }
 
 .second-author-description p {
-	float: left;
-	width: 70%;
-	padding: 15px;
-	line-height: 28px;
+    float: left;
+    width: 70%;
+    padding: 15px;
+    line-height: 28px;
 }
 
 .small-author-image {
-	width: 30%;
-	padding-top: 30%;
-	float: left;
-	background-position: center;
-	background-size: 100% 100%;
-	background-image: url('');
-	background-color: rgb(220, 220, 220);
+    width: 30%;
+    padding-top: 30%;
+    float: left;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url('');
+    background-color: rgb(220, 220, 220);
 }
 
+/*===========MEDIA QUERIES===============*/
 @media screen and (max-width: 1100px) {
-	.left-side {
-		text-align: center;
-	}
+    .left-side {
+        text-align: center;
+    }
 
-	.left-side-wrapper {
-		text-align: left;
-		padding-right: 0;
-	}
+    .left-side-wrapper {
+        text-align: left;
+        padding-right: 0;
+    }
 
-	.left-side-wrapper a {
-		margin-left: 0;
-		margin-top: 15px;
-		display: block;
-	}
+    .left-side-wrapper a {
+        margin-left: 0;
+        margin-top: 15px;
+        display: block;
+    }
 }
 
 @media screen and (max-width: 768px) {
-	section.banner {
-		background-size: cover;
-		background-position: 100px center;
-		height: 80vh;
-	}
-	nav.desktop-menu {
-		display: none;
-	}
-	header nav.mobile-menu {
-		display: block;
-	}
+    section.banner {
+        background-size: cover;
+        background-position: 100px center;
+        height: 80vh;
+    }
 
-	section.services {
-		flex-direction: column;
-	}
+    nav.desktop-menu {
+        display: none;
+    }
 
-	.left-side, .right-side {
-		padding: 80px 2%;
-		width: 100%;
-	}
+    header nav.mobile-menu {
+        display: block;
+    }
 
-	footer nav {
-		display: none;
-	}
+    section.services {
+        flex-direction: column; 
+    }
 
-	footer {
-		text-align: center;
-	}
+    .left-side, .right-side {
+        padding: 80px 2%;
+        width: 100%;
+    }
 
-	footer p {
-		float: none;
-	}
+    footer nav {
+        display: none; 
+    }
 
-	.sidebar {
-		width: 100%;
-		text-align: center;
-	}
+    footer {
+        text-align: center; 
+    }
 
-	.price-search {
-		display: inline-block;
-	}
+    footer p {
+        float: none; 
+    }
 
-	.year-search {
-		text-align: left;
-		display: inline-block;
-	}
+    .sidebar {
+        width: 100%;
+        text-align: center; 
+    }
 
-	.featured-sale {
-		text-align: center;
-		width: 100%;
-	}
+    .price-search {
+        display: inline-block;
+    }
 
-	.vehicle-information {
-		width: 100%;
-	}
+    .year-search {
+        text-align: left;
+        display: inline-block; 
+    }
 
-	.vehicle-description {
-		padding: 20px 0;
-		text-align: center;
-	}
+    .featured-sale {
+        text-align: center; 
+        width: 100%;
+    }
 
-	.vehicle-description a {
-		display: inline-block;
-	}
+    .vehicle-information {
+        width: 100%; 
+    }
 
-	.vehicle-description p {
-		max-width: none;
-	}
+    .vehicle-description {
+        padding: 20px 0;
+        text-align: center;
+    }
 
+    .vehicle-description a {
+        display: inline-block;
+    }
+
+    .vehicle-description p {
+        max-width: none; 
+    }
 }
 
 @media screen and (max-width: 580px) {
-	.banner-text {
-		padding: 30px;
-	}
+    .banner-text {
+        padding: 30px; 
+    }
 
-	.banner-text-single {
-		font-size: 18px;
-	}
+    .banner-text-single {
+        font-size: 18px; 
+    }
 
-	section.featured-vehicles .line-title h2 {
-		font-size: 23px;
-	}
+    section.featured-vehicles .line-title h2 {
+        font-size: 23px; 
+    }
 
-	section.featured-vehicles .container {
-		max-width: 900px;
-		padding: 40px 0;
-		text-align: center;
-	}
+    section.featured-vehicles .container {
+        max-width: 900px;
+        padding: 40px 0;
+        text-align: center; 
+    }
 
-	.featured-showcase {
-		display: inline-block;
-		float: none;
-		width: 80%;
-		margin-top: 20px;
-	}
+    .featured-showcase {
+        display: inline-block;
+        float: none; 
+        width: 80%; 
+        margin-top: 20px;
+    }
 
-	.featured-showcase a {
-		display: inline-block;
-	}
+    .featured-showcase a {
+        display: inline-block;
+    }
 
-	.w50 {
-		width: 100%;
-	}
+    .w50 {
+        width: 100%;
+    }
 
-	.small-author-image {
-		width: 100%;
-		padding-top: 100%;
-	}
-
-	.second-author-description p {
-		width: 100%;
-		padding: 20px 0;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.featured-showcase {
-		width: 100%;
-	}
+    .small-author-image {
+        width: 100%;
+        padding-top: 100%;
+    }
 }
